@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/iconsfonts.css">
-    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/normalize.min.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.min.css">
@@ -17,6 +15,54 @@
 </head>
 
 <body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header__wrap">
+            <a href="#" class="logo_link">
+                <picture class="logo_icon">
+                    <source media="(max-width: 420px)" srcset="">
+                    <img src="./img/logo_desktop.svg" alt="logotype">
+                </picture>
+            </a>
+            <!-- ---- -->
+            <div class="header__content">
+                <div class="header__controlls">
+                    <div class="header__buttons">
+                        <a href="#" class="btn btn_green btn_login" aria-label="botão de login">Entrar</a>
+                        <a href="#" class="btn btn_red btn_register" aria-label="botão registrar">Registre-se</a>
+                    </div>
+                    <!-- ---- -->
+                    <nav class="select_lang" aria-label="выбор языка страницы">
+                        <div class="select_lang__title">
+                            <img src="./img/langs/pt.svg" alt="Brazil" class="current_lang_flag">
+                            <div class="select_lang__chevron"></div>
+                        </div>
+                        <ul class="select_lang__content">
+                            <li><a href="#"><img src="./img/langs/ukr.svg" alt="Ukraine"><span>UA</span></a></li>
+                            <li><a href="#"><img src="./img/langs/gb.svg" alt="United Kingdom"><span>UK</span></a></li>
+                            <li><a href="#"><img src="./img/langs/usa.svg" alt="USA"><span>US</span></a></li>
+                            <li><a href="#"><img src="./img/langs/rf.svg" alt="Russian"><span>RU</span></a></li>
+                            <li><a href="#"><img src="./img/langs/fra.svg" alt="France"><span>FR</span></a></li>
+                            <li><a href="#"><img src="./img/langs/esp.svg" alt="Spain"><span>ES</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="header__navigation">
+                    <ul>
+                        <li active><a href="#">Cassino</a></li>
+                        <li><a href="#">Esporte</a></li>
+                        <li><a href="#">E-sports</a></li>
+                        <li><a href="#">Cassino Live</a></li>
+                        <li><a href="#">Jogos de TV</a></li>
+                        <li><a href="#"><img src="./img/aviator.svg" alt="aviator logotype"></a></li>
+                        <li><a href="#">Esportes Virtuais</a></li>
+                        <li><a href="#">Promoções</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- /#header -->
 
     <!-- ================================================ -->
     <script src="./scripts/bootstrap.bundle.min.js"></script>

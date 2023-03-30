@@ -1,0 +1,154 @@
+.select_lang {
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  max-width: 65px;
+  min-width: 65px;
+  width: 100%;
+  color: #fff;
+  max-height: 32px;
+
+  li {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: .2s;
+    padding: 8px 0px;
+
+    &:hover span {
+      color: $green;
+    }
+  }
+
+  li:not(:last-child) {
+    border-bottom: 1px solid #0f0f0f;
+  }
+
+  .select_lang__content {
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    transform: translateY(-16px);
+    background: $black;
+    padding: 0;
+    width: 100%;
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      margin-left: 3px;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-size: 14px;
+      display: inline-block;
+      width: 22px;
+      color: #fff;
+      margin-left: 8px;
+    }
+
+    img {
+      width: 22px;
+    }
+  }
+
+  .select_lang__title {
+    background: $black;
+    display: flex;
+    align-items: center;
+    column-gap: 25%;
+    transition: .3s;
+    padding: 8px 0px;
+    padding-left: 8px;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+
+    span {
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    .select_lang__chevron {
+      transition: .2s;
+      border-bottom: 5px solid transparent;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid #fff;
+      height: 0;
+      width: 0;
+      margin-bottom: -4px;
+      transform: scaleY(1);
+    }
+
+    img {
+      width: 22px;
+    }
+  }
+}
+
+.select_lang[active] {
+  .select_lang__content {
+    display: flex;
+  }
+
+  .select_lang__title .select_lang__chevron {
+    margin-bottom: 4px;
+    transform: scaleY(-1);
+    border-top: 5px solid $green;
+  }
+}
+
+/* =============================== */
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  transition: .3s;
+  box-sizing: border-box;
+  max-height: 36px;
+  height: 100%;
+}
+
+/* =============================== */
+
+.btn_green {
+  background: $green;
+
+  &:hover {
+    background: $green_active;
+  }
+}
+
+/* =============================== */
+
+.btn_red {
+  background: $red;
+
+  &:hover {
+    background: $red_active;
+  }
+}
+
+/* =============================== */
+
+.logo_link {
+  display: inline-block;
+  max-width: 120px;
+  width: 100%;
+
+  .logo_icon, img {
+    width: 100%;
+  }
+}
