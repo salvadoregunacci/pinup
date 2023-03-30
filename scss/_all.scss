@@ -5,6 +5,7 @@
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 3;
 }
 
 .header__wrap {
@@ -100,4 +101,90 @@
       border-radius: 100%;
     }
   }
+}
+
+.container_main {
+  &::after {
+    content: "";
+    display: block;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    top: 86px;
+    left: 0;
+    background: url("../img/girls-cards-left.webp") center center / cover no-repeat;
+    width: calc((100% - 1280px)/2);
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    top: 86px;
+    right: 0;
+    background: url("../img/girls-cards-right.webp") center center / cover no-repeat;
+    width: calc((100% - 1280px)/2);
+    z-index: 1;
+  }
+
+  .content_main {
+    position: relative;
+    z-index: 2;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    background: #262634;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    column-gap: 10px;
+  }
+}
+
+#sidebar {
+  box-sizing: border-box;
+  min-width: 245px;
+  min-height: 100vh;
+}
+
+#content {
+  width: 100%;
+}
+
+.bonus_banner {
+  background: url("../img/bonus-coins.webp") center center / 95% no-repeat;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.banner_lg img{
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.bonus_banner__content {
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.bonus_banner__title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.bonus_banner__btn {
+  max-height: 45px;
+  font-family: "Roboto";
+  font-weight: 500;
 }
