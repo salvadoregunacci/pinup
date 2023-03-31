@@ -222,6 +222,7 @@
   display: inline-flex;
   flex-direction: column;
   text-decoration: none;
+  position: relative;
 
   &:hover {
     .scale_box {
@@ -234,7 +235,7 @@
         height: 100%;
         background: #000;
         opacity: 0.1;
-        z-index: 1;
+        z-index: 2;
       }
     }
 
@@ -262,8 +263,6 @@
 }
 
 .thumb_block[data-new] {
-    position: relative;
-
     &::before {
       content: "";
       height: 34px;
@@ -274,8 +273,22 @@
       position: absolute;
       left: -6px;
       top: 6px;
-      z-index: 2;
+      z-index: 3;
     }
+}
+
+.thumb_block[data-cup] {
+  &::after {
+    content: "";
+    height: 56px;
+    width: 46px;
+    background: url("../img/cup.webp") center center/ contain no-repeat;
+    pointer-events: none;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    z-index: 1;
+  }
 }
 
 /* =============================== */
