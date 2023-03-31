@@ -1,23 +1,23 @@
 @font-face {
 	font-family: 'PT Sans';
-	src: url('../fonts/PTSans-Bold.eot');
-	src: local('PT Sans Bold'), local('PTSans-Bold'),
-		url('../fonts/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/PTSans-Bold.woff') format('woff'),
-		url('../fonts/PTSans-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-  font-display: swap;
-}
-/* ----------------------------- */
-@font-face {
-	font-family: 'PT Sans';
 	src: url('../fonts/PTSans-Regular.eot');
 	src: local('PT Sans'), local('PTSans-Regular'),
 		url('../fonts/PTSans-Regular.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/PTSans-Regular.woff') format('woff'),
 		url('../fonts/PTSans-Regular.ttf') format('truetype');
 	font-weight: normal;
+	font-style: normal;
+  font-display: swap;
+}
+/* ----------------------------- */
+@font-face {
+	font-family: 'PT Sans';
+	src: url('../fonts/PTSans-Bold.eot');
+	src: local('PT Sans Bold'), local('PTSans-Bold'),
+		url('../fonts/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PTSans-Bold.woff') format('woff'),
+		url('../fonts/PTSans-Bold.ttf') format('truetype');
+	font-weight: bold;
 	font-style: normal;
   font-display: swap;
 }
@@ -63,5 +63,16 @@
 			url('../fonts/Roboto-Black.ttf') format('truetype');
 	font-weight: 900;
 	font-style: normal;
+	font-display: swap;
+}
+/* ----------------------------- */
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto Bold Italic'), local('Roboto-Bold-Italic'),
+			url('../fonts/Roboto-BoldItalic.woff2') format('woff2'),
+			url('../fonts/Roboto-BoldItalic.woff') format('woff'),
+			url('../fonts/Roboto-BoldItalic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
 	font-display: swap;
 }

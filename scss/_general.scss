@@ -12,7 +12,7 @@ $gray: #a9a9a9;
 // Styles ==========
 
 body {
-  font-family: "PT Sans", "Roboto", sans-serif;
+  font-family: "Roboto", "PT Sans", sans-serif;
   font-weight: 400;
   box-sizing: border-box;
 }
@@ -33,4 +33,52 @@ body {
   color: #fff;
   font-weight: 700;
 }
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+  }
+
+  li {
+    width: 100%;
+  }
+
+  .category {
+    border-radius: 0;
+    height: 40px;
+    justify-content: flex-start;
+    padding-left: 10px;
+    font-weight: 400;
+    font-family: "PT Sans";
+    width: 100%;
+  }
+
+  ul li:first-child .category {
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+  }
+
+  ul li:last-child .category {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+
+  ul li:not(:last-child) .category {
+    margin-bottom: 1px;
+  }
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 

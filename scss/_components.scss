@@ -54,7 +54,7 @@
     }
 
     img {
-      width: 22px;
+      width: 24px;
     }
   }
 
@@ -65,7 +65,7 @@
     column-gap: 25%;
     transition: .3s;
     padding: 8px 0px;
-    padding-left: 8px;
+    padding-left: 7px;
     color: #fff;
     width: 100%;
     box-sizing: border-box;
@@ -88,7 +88,7 @@
     }
 
     img {
-      width: 22px;
+      width: 24px;
     }
   }
 }
@@ -104,9 +104,7 @@
     border-top: 5px solid $green;
   }
 }
-
 /* =============================== */
-
 .btn {
   display: inline-flex;
   justify-content: center;
@@ -117,12 +115,10 @@
   color: #fff;
   transition: .3s;
   box-sizing: border-box;
-  max-height: 36px;
   height: 100%;
+  font-weight: 500;
 }
-
 /* =============================== */
-
 .btn_green {
   background: $green;
 
@@ -130,9 +126,7 @@
     background: $green_active;
   }
 }
-
 /* =============================== */
-
 .btn_red {
   background: $red;
 
@@ -140,9 +134,18 @@
     background: $red_active;
   }
 }
-
 /* =============================== */
+.btn_gray {
+  background: #424242;
+  color: #fff;
+  text-decoration: none;
+  font-family: "PT Sans";
 
+  &:hover {
+    background: #242424;
+  }
+}
+/* =============================== */
 .logo_link {
   display: inline-block;
   max-width: 120px;
@@ -150,5 +153,35 @@
 
   .logo_icon, img {
     width: 100%;
+  }
+}
+/* =============================== */
+.search {
+  position: relative;
+
+  .search_btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 5px;
+    background: url("../img/magnifier.svg") center center / cover no-repeat;
+    border: none;
+    transform: translateY(-50%) scaleX(-1);
+    cursor: pointer;
+  }
+
+  .search_input {
+    font-family: "PT Sans";
+    padding-left: 30px;
+    height: 36px;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: none;
+
+    &:focus {
+      outline: 2px solid $green;
+    }
   }
 }
