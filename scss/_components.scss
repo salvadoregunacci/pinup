@@ -265,7 +265,7 @@
 .thumb_block[data-new] {
     &::before {
       content: "";
-      height: 34px;
+      height: 30px;
       width: 100%;
       background: url("../img/new_left.svg") no-repeat center;
       background-position: left;
@@ -285,7 +285,7 @@
     background: url("../img/cup.webp") center center/ contain no-repeat;
     pointer-events: none;
     position: absolute;
-    right: 15px;
+    right: 6px;
     top: 0px;
     z-index: 1;
   }
@@ -359,6 +359,84 @@
 
     path {
       stroke: $green;
+    }
+  }
+}
+/* =============================== */
+.rating {
+  font-family: "PT Sans";
+  max-width: 500px;
+
+  .rating__summary {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-bottom: 2px solid $red;
+    padding-bottom: 25px;
+  }
+
+  .rating__row,
+  .rating__total {
+    display: flex;
+    column-gap: 25px;
+  }
+
+  .rating__row_wrap {
+    display: flex;
+    column-gap: 25px;
+  }
+
+  .rating__total {
+    margin-top: 25px;
+
+    .rating__title {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 1;
+      color: #fff;
+    }
+
+    .rating__total_count {
+      color: #fff;
+      font-size: 22px;
+      line-height: 1;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+
+  .rating__title {
+    width: 100%;
+  }
+
+  .rating__stars_container {
+    display: flex;
+    column-gap: 10px;
+    margin-left: 15px;
+  }
+
+  .rating__star {
+    width: 17px;
+    height: 17px;
+    background: url("../img/star_fill.svg") 0 0 / 100% no-repeat;
+  }
+
+  .rating__star[empty] {
+    background-image: url("../img/star_empty.svg");
+  }
+
+  .rating__star[half] {
+    background-image: url("../img/star_half.svg");
+  }
+
+  .rating__total_count {
+    color: rgb(146, 146, 146);
+  }
+
+  .rating__total {
+    .rating__stars_container {
+      margin-left: 0;
+      transform: translateX(-11px);
     }
   }
 }

@@ -1,12 +1,12 @@
 #header {
   width: 100%;
   background: $black;
-  padding: 15px 0;
+  padding: 10px 0;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 3;
-  box-shadow: 0 0 18px 16px rgba(0,0,0,.15);
+  box-shadow: 0 0 18px 16px rgba(0, 0, 0, .15);
 }
 
 .header__wrap {
@@ -111,10 +111,10 @@
     width: 15%;
     height: 100%;
     position: fixed;
-    top: 86px;
+    top: 76px;
     left: 0;
     background: url("../img/girls-cards-left.webp") center center / cover no-repeat;
-    width: calc((100% - 1280px)/2);
+    width: calc((100% - 1278px)/2);
     z-index: 1;
   }
 
@@ -124,7 +124,7 @@
     width: 15%;
     height: 100%;
     position: fixed;
-    top: 86px;
+    top: 76px;
     right: 0;
     background: url("../img/girls-cards-right.webp") center center / cover no-repeat;
     width: calc((100% - 1280px)/2);
@@ -137,11 +137,15 @@
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-    background: #262634;
     color: #fff;
+    background: $cover_bg;
+  }
+
+  .content_wrap {
     padding: 10px;
     display: flex;
-    column-gap: 10px;
+    column-gap: 15px;
+    background: $cover_bg;
   }
 }
 
@@ -269,4 +273,94 @@
 
 .game__hidden {
   margin-top: 10px;
+}
+
+.info {
+  font-family: "PT Sans";
+
+  .title_section:first-child {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  table {
+    font-family: "PT Sans";
+    border-collapse: collapse;
+    margin: 0;
+  }
+
+  td {
+    border: 1px solid rgb(129, 129, 129);
+    padding: 6px 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin: 0.67em 0;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  a {
+    color: $green;
+  }
+
+  p {
+    margin: 15px 0;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 15px;
+  }
+
+  ol {
+    padding-left: 35px;
+  }
+
+  ol li::marker {
+    color: $green;
+  }
+
+  ul li {
+    padding-left: 20px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #24bb9d;
+      border-radius: 50%;
+    }
+  }
+
+  ol li:not(:last-child), ul li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.info__row {
+  display: flex;
+  column-gap: 100px;
+  margin-bottom: 25px;
+
+  table {
+    margin-top: 0px;
+  }
 }
