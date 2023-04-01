@@ -6,10 +6,16 @@ const $selectLang = document.querySelector('.select_lang');
 const $rolledOpenButtons = document.querySelectorAll('.rolled_btn');
 const $rolledBackButtons = document.querySelectorAll('.rolled_back_btn');
 const $faqItems = document.querySelectorAll('.faq_section__item');
+const $btnTop = document.querySelector('.scroll_top_btn');
 
 // =========================
 // Events
 // =========================
+
+if ($btnTop && window) {
+  $btnTop.addEventListener("click", _scrollToTop);
+}
+
 
 if ($selectLang) {
   $selectLang.addEventListener("click", () => {
@@ -35,6 +41,15 @@ if ($faqItems) {
 // Functions
 // =========================
 
+function _scrollToTop() {
+  const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+  
+  if (currentPosition > 0) {
+    window.requestAnimationFrame(_scrollToTop);
+    window.scrollTo(0, currentPosition - currentPosition / 15);
+  }
+}
+
 function _rolledHandler(handlersArr) {
   handlersArr.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -54,7 +69,7 @@ function _openFaqBlock(e) {
     $curItem.classList.remove("active");
     return;
   }
-  
+
   $faqItems.forEach(item => item.classList.remove("active"));
   $curItem.classList.add("active");
 }

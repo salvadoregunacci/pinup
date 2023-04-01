@@ -81,7 +81,9 @@ body {
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration { display: none; }
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
 
 .check {
   tr>td:nth-child(1) {
@@ -203,3 +205,43 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   }
 }
 
+.scroll_top_btn {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 5;
+  background: #191919;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+
+  svg {
+    transform: translateY(-1px);
+  }
+
+  path {
+    fill: #fff;
+    transition: .3s;
+  }
+
+  span {
+    transition: .3s;
+    color: #fff;
+    font-family: "PT Sans";
+    font-size: 14px;
+  }
+
+  &:hover {
+    path {
+      fill: $green;
+    }
+
+    span {
+      color: $green;
+    }
+  }
+}
