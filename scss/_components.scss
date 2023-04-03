@@ -94,6 +94,9 @@
 }
 
 .select_lang[active] {
+  position: relative;
+  z-index: 21;
+  
   .select_lang__content {
     display: flex;
   }
@@ -155,10 +158,8 @@
 /* =============================== */
 .logo_link {
   display: inline-block;
-  max-width: 120px;
-  width: 100%;
+  width: 120px;
 
-  .logo_icon,
   img {
     width: 100%;
   }

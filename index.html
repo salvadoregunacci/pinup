@@ -18,46 +18,99 @@
     <!-- HEADER -->
     <header id="header">
         <div class="header__wrap">
-            <a href="#" class="logo_link">
-                <picture class="logo_icon">
-                    <source media="(max-width: 420px)" srcset="">
-                    <img src="./img/logo_desktop.svg" alt="logotype">
-                </picture>
-            </a>
+            <a href="#" class="logo_link logo_pc"><img src="./img/logo_desktop.svg" alt="logotype"></a>
             <!-- ---- -->
             <div class="header__content">
                 <div class="header__controlls">
-                    <div class="header__buttons">
-                        <a href="#" class="btn btn_green btn_login" aria-label="botão de login">Entrar</a>
-                        <a href="#" class="btn btn_red btn_register" aria-label="botão registrar">Registre-se</a>
+                    <div class="header__burger" onclick="this.classList.toggle('active')">
+                        <span></span>
                     </div>
-                    <!-- ---- -->
-                    <nav class="select_lang" aria-label="seleção de idioma da página">
-                        <div class="select_lang__title">
-                            <img src="./img/langs/pt.svg" alt="Brazil" class="current_lang_flag">
-                            <div class="select_lang__chevron"></div>
+                    <div class="header__row">
+                        <a href="#" class="logo_link logo_mob">
+                            <picture>
+                                <source media="(max-width: 1025px)" srcset="./img/logo_text.svg">
+                                <img src="./img/logo_desktop.svg" alt="logotype">
+                            </picture>
+                        </a>
+                        <!-- ---- -->
+                        <div class="header__controlls_wrap">
+                            <div class="header__buttons">
+                                <a href="#" class="btn btn_green btn_login" aria-label="botão de login">Entrar</a>
+                                <a href="#" class="btn btn_red btn_register"
+                                    aria-label="botão registrar">Registre-se</a>
+                            </div>
+                            <!-- ---- -->
+                            <nav class="select_lang" aria-label="seleção de idioma da página">
+                                <div class="select_lang__title">
+                                    <img src="./img/langs/pt.svg" alt="Brazil" class="current_lang_flag">
+                                    <div class="select_lang__chevron"></div>
+                                </div>
+                                <ul class="select_lang__content">
+                                    <li><a href="#"><img src="./img/langs/ukr.svg" alt="Ukraine"><span>UA</span></a>
+                                    </li>
+                                    <li><a href="#"><img src="./img/langs/gb.svg"
+                                                alt="United Kingdom"><span>UK</span></a>
+                                    </li>
+                                    <li><a href="#"><img src="./img/langs/usa.svg" alt="USA"><span>US</span></a></li>
+                                    <li><a href="#"><img src="./img/langs/rf.svg" alt="Russian"><span>RU</span></a></li>
+                                    <li><a href="#"><img src="./img/langs/fra.svg" alt="France"><span>FR</span></a></li>
+                                    <li><a href="#"><img src="./img/langs/esp.svg" alt="Spain"><span>ES</span></a></li>
+                                </ul>
+                            </nav>
                         </div>
-                        <ul class="select_lang__content">
-                            <li><a href="#"><img src="./img/langs/ukr.svg" alt="Ukraine"><span>UA</span></a></li>
-                            <li><a href="#"><img src="./img/langs/gb.svg" alt="United Kingdom"><span>UK</span></a></li>
-                            <li><a href="#"><img src="./img/langs/usa.svg" alt="USA"><span>US</span></a></li>
-                            <li><a href="#"><img src="./img/langs/rf.svg" alt="Russian"><span>RU</span></a></li>
-                            <li><a href="#"><img src="./img/langs/fra.svg" alt="France"><span>FR</span></a></li>
-                            <li><a href="#"><img src="./img/langs/esp.svg" alt="Spain"><span>ES</span></a></li>
-                        </ul>
-                    </nav>
+                    </div>
                 </div>
                 <!-- ---- -->
                 <nav class="header__navigation" aria-label="navegação no site">
                     <ul>
-                        <li active><a href="#">Cassino</a></li>
-                        <li><a href="#">Esporte</a></li>
-                        <li><a href="#">E-sports</a></li>
-                        <li><a href="#">Cassino Live</a></li>
-                        <li><a href="#">Jogos de TV</a></li>
-                        <li><a href="#"><img src="./img/aviator.svg" alt="aviator logotype"></a></li>
-                        <li><a href="#">Esportes Virtuais</a></li>
-                        <li><a href="#">Promoções</a></li>
+                        <li active>
+                            <a href="#"><span>Cassino</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/menu_icons/ball.svg" alt="ball icon" class="mob_menu_icon">
+                                <span>Esporte</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/menu_icons/e-sports.svg" alt="e-sports icon" class="mob_menu_icon">
+                                <span>E-sports</span>
+                            </a>
+                        </li>
+                        <li data-live>
+                            <a href="#">
+                                <img src="./img/menu_icons/live-dillers.svg" alt="live dillers icon"
+                                    class="mob_menu_icon">
+                                <span>Cassino Live</span>
+                            </a>
+                            <span class="live_icon">LIVE</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/menu_icons/tv-games.svg" alt="tv games icon" class="mob_menu_icon">
+                                <span>Jogos de TV</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/menu_icons/aviator-plane.svg" alt="aviator plane icon"
+                                    class="mob_menu_icon">
+                                <img src="./img/aviator.svg" alt="aviator logotype">
+                            </a>
+                        </li>
+                        <li data-new>
+                            <a href="#">
+                                <img src="./img/menu_icons/v-sport.svg" alt="virtual sport icon" class="mob_menu_icon">
+                                <span>Esportes Virtuais</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/menu_icons/promo-red.svg" alt="present icon" class="mob_menu_icon">
+                                <span>Promoções</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -70,31 +123,77 @@
         <h1 class="sr_only">Сassino online Pin-up</h1>
 
         <button class="scroll_top_btn" aria-label="botão para cima">
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z" fill="black" />
-            </svg>
+            <img src="./img/chevron_white.svg" alt="chevron" loading="lazy">
             <span>Para cima</span>
         </button>
 
         <div class="container_main">
             <div class="content_main">
+                <div class="banner_row">
+                    <div class="bonus_banner_wrap">
+                        <a href="#" class="bonus_banner">
+                            <div class="bonus_banner__title">Bônus de Boas-vindas</div>
+                            <div class="bonus_banner__content">€ 500</div>
+                            <button class="bonus_banner__btn btn btn_red">Obtenha agora</button>
+                        </a>
+                        <button class="bonus_banner__close_btn"></button>
+                    </div>
+                    <!-- ---- -->
+                    <a href="#" class="banner_lg">
+                        <picture>
+                            <source media="(max-width: 420px)" srcset="./img/banner_main_sm.webp">
+                            <source media="(max-width: 768px)" srcset="./img/banner_main_md.webp">
+                            <img src="./img/banner_main_lg.webp" alt="logotype">
+                        </picture>
+
+                        <div class="banner_lg__content">
+                            <div class="banner_lg__text">
+                                250 FS + 100%: <br>
+                                bônus de boas-vindas <br>
+                                Acenda a chama das vitórias!
+                            </div>
+                            <button class="banner_lg__btn btn btn_red">Obter bônus</button>
+                        </div>
+                    </a>
+                </div>
                 <div class="content_wrap">
                     <!-- SIDEBAR -->
                     <aside id="sidebar">
-                        <div class="bonus_banner">
-                            <div class="bonus_banner__title">Bônus de Boas-vindas</div>
-                            <div class="bonus_banner__content">€ 500</div>
-                            <a href="#" class="bonus_banner__btn btn btn_red">Obtenha agora</a>
-                        </div>
-
                         <!-- CATEGORIES -->
                         <nav class="categories">
                             <ul>
-                                <li><a href="#" class="category btn btn_red">Pincoins</a></li>
-                                <li><a href="#" class="category btn btn_red">Conquistas do cassino</a></li>
-                                <li><a href="#" class="category btn btn_red">Loteria</a></li>
-                                <li><a href="#" class="category btn btn_red">Promoções</a></li>
-                                <li><a href="#" class="category btn btn_red">Novidades</a></li>
+                                <li>
+                                    <a href="#" class="category btn btn_red">
+                                        <img src="./img/menu_icons/pincoin.svg" alt="pincoin icon"
+                                            class="mob_menu_icon">
+                                        <span>Pincoins</span>
+                                    </a>
+                                </li>
+                                <li data-cup>
+                                    <a href="#" class="category btn btn_red">
+                                        <img src="./img/menu_icons/achievements.svg" alt="achievements icon"
+                                            class="mob_menu_icon">
+                                        <span>Torneios</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="category btn btn_red">
+                                        <img src="./img/menu_icons/ticket.svg" alt="ticket icon" class="mob_menu_icon">
+                                        <span>Loteria</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="category btn btn_red">
+                                        <img src="./img/menu_icons/news.svg" alt="news icon" class="mob_menu_icon">
+                                        <span>Novidades</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="category btn btn_red">
+                                        <img src="./img/menu_icons/dopinfo.svg" alt="info icon" class="mob_menu_icon">
+                                        <span>Informação</span>
+                                    </a>
+                                </li>
                             </ul>
                         </nav>
 
@@ -107,7 +206,13 @@
 
                             <!-- PROVIDERS -->
                             <nav class="providers">
-                                <ul>
+                                <div class="providers__compact">
+                                    <div class="providers__burger">
+                                        <span></span>
+                                    </div>
+                                    <div class="providers__compact_title">Providers</div>
+                                </div>
+                                <ul active>
                                     <li><a href="#" class="btn btn_gray">Drops & Wins</a></li>
                                     <li><a href="#" class="btn btn_gray">1spin4win</a></li>
                                     <li><a href="#" class="btn btn_gray">1x2gaming</a></li>
@@ -175,29 +280,11 @@
 
                     <!-- CONTENT -->
                     <div id="content">
-                        <div class="banner_lg">
-                            <picture>
-                                <picture class="logo_icon">
-                                    <source media="(max-width: 420px)" srcset="">
-                                    <img src="./img/banner_main_lg.webp" alt="logotype">
-                                </picture>
-                            </picture>
-
-                            <div class="banner_lg__content">
-                                <div class="banner_lg__text">
-                                    250 FS + 100%: <br>
-                                    bônus de boas-vindas <br>
-                                    Acenda a chama das vitórias!
-                                </div>
-                                <a href="#" class="banner_lg__btn btn btn_red">Obter bônus</a>
-                            </div>
-                        </div>
-
                         <!-- GAMES -->
                         <section class="games rolled">
                             <h2 class="sr_only">Lista de jogos</h2>
 
-                            <div class="game__visible rolled_visible dashbord">
+                            <div class="dashbord">
                                 <a href="#" class="thumb_block game" data-cup>
                                     <span class="scale_box">
                                         <img src="./img/games/game_1.webp" loading="lazy" alt="game preview">
@@ -287,12 +374,6 @@
                                     </span>
                                     <span class="thumb_block__title">7 & Hot Fruits</span>
                                 </a>
-                            </div>
-                            <!-- ---- -->
-                            <button class="btn btn_red rolled_btn" aria-label="botão de expandir seção">Mostrar todos os
-                                jogos</button>
-                            <!-- ---- -->
-                            <div class="game__hidden rolled_hidden dashbord">
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
                                         <img src="./img/games/game_16.webp" loading="lazy" alt="game preview">
@@ -355,7 +436,10 @@
                                     <span class="thumb_block__title">Burning Classics Go Wild</span>
                                 </a>
                             </div>
-
+                            <!-- ---- -->
+                            <button class="btn btn_red rolled_btn" aria-label="botão de expandir seção">Mostrar todos os
+                                jogos</button>
+                            <!-- ---- -->
                             <button class="rolled_back_btn" aria-label="botão de seção de recolhimento">
                                 <span>Colapso</span>
 
@@ -927,7 +1011,7 @@
                                 <li class="footer_benefit">Recompensas regulares para jogadores ativos</li>
                             </ul>
 
-                            <img src="./img/footer/pinup.svg" alt="pinup logotype" class="footer_logo__icon"
+                            <img src="./img/logo_text.svg" alt="pinup logotype" class="footer_logo__icon"
                                 loading="lazy">
                         </div>
                     </div>

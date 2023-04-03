@@ -7,6 +7,45 @@
   left: 0;
   z-index: 20;
   box-shadow: 0 0 18px 16px rgba(0, 0, 0, .15);
+  box-sizing: border-box;
+}
+
+.live_icon {
+  display: none;
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.games .thumb_block {
+  display: none;
+}
+
+.games .thumb_block:nth-child(-n+15) {
+  display: block;
+}
+
+.games[active] {
+  .thumb_block {
+    display: block;
+  }
+}
+
+.header__burger {
+  display: none;
+  min-width: 30px;
+}
+
+.providers__burger {
+  display: none;
+}
+
+.providers__compact {
+  display: none;
 }
 
 .header__wrap {
@@ -142,8 +181,7 @@
   }
 
   .content_wrap {
-    padding: 10px;
-    padding-bottom: 0;
+    padding: 0 10px;
     display: flex;
     column-gap: 15px;
     background: $cover_bg;
@@ -159,15 +197,39 @@
   width: 100%;
 }
 
+.header__controlls_wrap {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.banner_row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.bonus_banner_wrap, .bonus_banner_wrap[hidden] {
+  display: block;
+}
+
 .bonus_banner {
   background: url("../img/bonus-coins.webp") center center / 95% no-repeat;
-  width: 100%;
   height: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   row-gap: 10px;
+  min-width: 245px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.bonus_banner__close_btn {
+  display: none;
 }
 
 .banner_lg {
@@ -185,6 +247,8 @@
   top: 50%;
   left: 25px;
   transform: translateY(-50%);
+  color: #fff;
+  text-decoration: none;
 }
 
 .banner_lg__text {
@@ -266,10 +330,6 @@
       pointer-events: none;
     }
   }
-}
-
-.games {
-  margin-top: 15px;
 }
 
 .game__hidden {
@@ -596,4 +656,21 @@
 .info + .faq_section {
   padding-bottom: 25px;
 }
+
+.logo_mob {
+  display: none;
+}
+
+.header__navigation li a .mob_menu_icon {
+  display: none;
+}
+
+.mob_menu_icon {
+  display: none;
+}
+
+
+
+
+
 

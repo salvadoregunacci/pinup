@@ -40,7 +40,6 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  margin-top: 12px;
 
   ul {
     margin: 0;
@@ -215,18 +214,9 @@ input[type="search"]::-webkit-search-results-decoration {
   border-radius: 4px;
   cursor: pointer;
   border: none;
-  display: flex;
   align-items: center;
   column-gap: 5px;
-
-  svg {
-    transform: translateY(-1px);
-  }
-
-  path {
-    fill: #fff;
-    transition: .3s;
-  }
+  display: none;
 
   span {
     transition: .3s;
@@ -236,12 +226,12 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 
   &:hover {
-    path {
-      fill: $green;
-    }
-
     span {
       color: $green;
     }
   }
+}
+
+.scroll_top_btn[active] {
+  display: flex;
 }
