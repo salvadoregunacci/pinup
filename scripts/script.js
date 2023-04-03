@@ -2,6 +2,8 @@
 // Variables
 // =========================
 
+// $ - element from DOM
+
 const $selectLang = document.querySelector('.select_lang');
 const $rolledOpenButtons = document.querySelectorAll('.rolled_btn');
 const $rolledBackButtons = document.querySelectorAll('.rolled_back_btn');
@@ -12,12 +14,14 @@ const $sideMenu = document.querySelector('.header__navigation ul');
 const observer = new IntersectionObserver(_bannerVisibleHandler);
 const $mainBanner = document.querySelector('.banner_lg');
 const $providersBtn = document.querySelector('.providers__compact');
-
 const $bonusBanner = document.querySelector('.bonus_banner_wrap');
 const $bonusBannerCloseBtn = document.querySelector('.bonus_banner__close_btn');
 
 let isCompactMenu = false;
 let isMoveLangsInSide = false;
+let startX;
+let startY;
+let threshold = 100; // расстояние, необходимое для определения свайпа
 
 // =========================
 // Events
@@ -30,13 +34,13 @@ window.addEventListener("resize", () => {
 document.addEventListener("DOMContentLoaded", checkWindowSizeRelative);
 
 if ($bonusBanner && $bonusBannerCloseBtn) {
-  $bonusBannerCloseBtn.addEventListener("click", ()=> {
+  $bonusBannerCloseBtn.addEventListener("click", () => {
     $bonusBanner.setAttribute("hidden", "");
   });
 }
 
 if ($providersBtn && window.innerWidth < 990) {
-  $providersBtn.addEventListener("click", ()=> {
+  $providersBtn.addEventListener("click", () => {
     const $providersWrap = $providersBtn.closest(".providers");
 
     if ($providersWrap) {
@@ -48,19 +52,9 @@ if ($providersBtn && window.innerWidth < 990) {
 if ($burgerBtn) {
   $burgerBtn.addEventListener("click", () => {
     if ($burgerBtn.classList.contains("active")) {
-      $sideMenu.setAttribute("active", "");
-      $burgerBtn.classList.add("active");
-
-      if (window.innerWidth <= 420) {
-        document.body.style.overflowY = "hidden";
-      }
+      _closeMenu();
     } else {
-      $sideMenu.removeAttribute("active");
-      $burgerBtn.classList.remove("active");
-
-      if (window.innerWidth <= 420) {
-        document.body.style.overflowY = "scroll";
-      }
+      _openMenu()
     }
   });
 }
@@ -95,11 +89,34 @@ if ($mainBanner) {
 // Functions
 // =========================
 
+function _openMenu() {
+  if (!$sideMenu || !$burgerBtn) return;
+
+  $sideMenu.removeAttribute("active");
+  $burgerBtn.classList.remove("active");
+
+  if (window.innerWidth <= 420) {
+    document.body.style.overflowY = "scroll";
+  }
+}
+
+function _closeMenu() {
+  if (!$sideMenu || !$burgerBtn) return;
+
+  $sideMenu.setAttribute("active", "");
+  $burgerBtn.classList.add("active");
+
+  if (window.innerWidth <= 420) {
+    document.body.style.overflowY = "hidden";
+  }
+}
+
 function _addSelectLangHandler(select) {
   select.addEventListener("click", () => {
     select.toggleAttribute("active");
   });
 }
+
 
 function checkWindowSizeRelative() {
   if (window.innerWidth <= 990) {
@@ -117,12 +134,13 @@ function checkWindowSizeRelative() {
   } else {
     const $oldSelectLangsMob = document.querySelectorAll('.select_lang__mob');
 
-    if(!$oldSelectLangsMob.length || !isMoveLangsInSide) return;
+    if (!$oldSelectLangsMob.length || !isMoveLangsInSide) return;
 
     isMoveLangsInSide = false;
     $oldSelectLangsMob.forEach(select => select.remove());
   }
 }
+
 
 function _moveToSideLangSelect() {
   const $selectLang = document.querySelector('.select_lang');
@@ -137,6 +155,7 @@ function _moveToSideLangSelect() {
   isMoveLangsInSide = true;
 }
 
+
 function _removeAddItemsMenu() {
   const $addItemsMenu = document.querySelectorAll('.add_item_menu');
 
@@ -145,6 +164,7 @@ function _removeAddItemsMenu() {
   $addItemsMenu.forEach(item => item.remove());
   isCompactMenu = false;
 }
+
 
 function _setCompactMenu() {
   if (!$sideMenu) return;
@@ -166,6 +186,7 @@ function _setCompactMenu() {
   isCompactMenu = true;
 }
 
+
 function _bannerVisibleHandler(entries) {
   if (entries[0].isIntersecting) {
     $btnTop.removeAttribute("active");
@@ -173,6 +194,7 @@ function _bannerVisibleHandler(entries) {
     $btnTop.setAttribute("active", "");
   }
 }
+
 
 function _scrollToTop() {
   const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
@@ -182,6 +204,7 @@ function _scrollToTop() {
     window.scrollTo(0, currentPosition - currentPosition / 15);
   }
 }
+
 
 function _rolledHandler(handlersArr) {
   handlersArr.forEach(btn => {
@@ -199,6 +222,7 @@ function _rolledHandler(handlersArr) {
   });
 }
 
+
 function _openFaqBlock(e) {
   const $curItem = e.target.closest(".faq_section__item");
 
@@ -210,3 +234,30 @@ function _openFaqBlock(e) {
   $faqItems.forEach(item => item.classList.remove("active"));
   $curItem.classList.add("active");
 }
+
+// SWIPE =======================================
+
+document.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+  startY = e.touches[0].clientY;
+});
+
+document.addEventListener('touchmove', (e) => {
+  let currentX = e.touches[0].clientX;
+  let currentY = e.touches[0].clientY;
+  let diffX = startX - currentX;
+  let diffY = startY - currentY;
+
+  if (Math.abs(diffX) > Math.abs(diffY)) {
+    if (diffX > threshold && window.innerWidth <= 1025) { // swipe left
+      _openMenu();
+    } else if (diffX < -threshold) { // swipe right
+      _closeMenu();
+    }
+  }
+});
+
+document.addEventListener('touchend', (e) => {
+  startX = null;
+  startY = null;
+});

@@ -381,8 +381,16 @@
 }
 
 @media (max-width: 990px) {
+  .title_section {
+    white-space: normal;
+
+    &::after, &::before {
+      width: 40%;
+    }
+  }
+
   .bonus_banner_wrap[hidden] {
-    display: none;
+    transform: translateY(110%);
   }
 
   .bonus_banner_wrap {
@@ -401,19 +409,9 @@
     column-gap: 15px;
     border: 1px solid $green;
     border-bottom: 0px;
-    border-left: 0px;
+    border-left: 4px solid $green;
     border-top-right-radius: 60px;
     padding-right: 40px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 4px;
-      background: $green;
-    }
 
     .bonus_banner__btn {
       display: none;
@@ -470,6 +468,9 @@
     transition: .3s;
     border-bottom: 1px solid transparent;
     box-sizing: border-box;
+    border: none;
+    width: 100%;
+    color: #fff;
   }
 
   .providers {
@@ -481,7 +482,7 @@
     bottom: 0;
     left: 0;
     transform: translateY(106%);
-    z-index: 5;
+    z-index: 16;
     height: 280px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -543,6 +544,7 @@
     ul {
       display: block;
       max-height: 1000px;
+      border-top: 1px solid $green;
     }
   }
 
@@ -622,7 +624,7 @@
 
   .providers ul {
     height: 350px;
-    transform: translateY(104.5%);
+    transform: translateY(105%);
   }
 }
 
@@ -720,7 +722,7 @@
 
   .bonus_banner {
     padding: 5px;
-    padding-right: 15px;
+    padding-right: 20px;
     position: relative;
     column-gap: 10px;
   }
@@ -733,6 +735,10 @@
   .banner_lg__text {
     font-size: 20px;
     text-shadow: 0 0 10px rgba($color: #000000, $alpha: 1.0);
+  }
+
+  .bonus_banner .bonus_banner__title {
+    margin-left: 5px;
   }
 
   .header__navigation ul {
@@ -876,6 +882,10 @@
 @media (max-width: 350px) {
   .header__navigation ul li a {
     font-size: 16px;
+  }
+
+  .bonus_banner .bonus_banner__content {
+    font-size: 22px;
   }
 }
 

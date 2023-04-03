@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -7,54 +7,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 
+    <!-- NO INDEX / NO FOLLOW -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- -------------------- -->
+
+    <meta name="description"
+        content="Jogue de graça ou por dinheiro real no casino online Pin-Up. Nós temos os melhores Slots, Roletas com crupiês ao vivo e muitos outros jogos que pagam boladas!">
+    <!-- open graph -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="pin-up.com.br">
+    <meta property="og:url" content="#">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cassino online — jogue de graça no Pin-Up">
+    <meta property="og:description"
+        content="Jogue de graça ou por dinheiro real no casino online Pin-Up. Nós temos os melhores Slots, Roletas com crupiês ao vivo e muitos outros jogos que pagam boladas!">
+    <meta property="og:image" content="./img/logo_text.svg">
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Cassino online — jogue de graça no Pin-Up">
+    <meta name="twitter:description"
+        content="Jogue de graça ou por dinheiro real no casino online Pin-Up. Nós temos os melhores Slots, Roletas com crupiês ao vivo e muitos outros jogos que pagam boladas!">
+    <meta name="twitter:image" content="./img/logo_text.svg">
+    <!-- ---------- -->
+    <meta name="theme-color" content="#424242">
+
     <link rel="stylesheet" href="./css/normalize.min.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.min.css">
 
-    <title>Pin-up</title>
+    <title>Cassino online — jogue de graça no Pin-Up</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header id="header">
         <div class="header__wrap">
-            <a href="#" class="logo_link logo_pc"><img src="./img/logo_desktop.svg" alt="logotype"></a>
-            <!-- ---- -->
+            <a href="#" class="logo_link logo_pc">
+                <img src="./img/logo_desktop.svg" alt="logotype" loading="lazy">
+            </a>
+            <!-- -------- -->
             <div class="header__content">
                 <div class="header__controlls">
                     <div class="header__burger" onclick="this.classList.toggle('active')">
                         <span></span>
                     </div>
+                    <!-- -------- -->
                     <div class="header__row">
                         <a href="#" class="logo_link logo_mob">
                             <picture>
                                 <source media="(max-width: 1025px)" srcset="./img/logo_text.svg">
-                                <img src="./img/logo_desktop.svg" alt="logotype">
+                                <img src="./img/logo_desktop.svg" alt="pin-up logotype" loading="lazy">
                             </picture>
                         </a>
-                        <!-- ---- -->
+                        <!-- -------- -->
                         <div class="header__controlls_wrap">
                             <div class="header__buttons">
                                 <a href="#" class="btn btn_green btn_login" aria-label="botão de login">Entrar</a>
                                 <a href="#" class="btn btn_red btn_register"
                                     aria-label="botão registrar">Registre-se</a>
                             </div>
-                            <!-- ---- -->
+
                             <nav class="select_lang" aria-label="seleção de idioma da página">
                                 <div class="select_lang__title">
-                                    <img src="./img/langs/pt.svg" alt="Brazil" class="current_lang_flag">
+                                    <img src="./img/langs/pt.svg" alt="Brazil" class="current_lang_flag" loading="lazy">
                                     <div class="select_lang__chevron"></div>
                                 </div>
+                                <!-- -------- -->
                                 <ul class="select_lang__content">
-                                    <li><a href="#"><img src="./img/langs/ukr.svg" alt="Ukraine"><span>UA</span></a>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/langs/ukr.svg" alt="Ukraine" loading="lazy"><span>UA</span>
+                                        </a>
                                     </li>
-                                    <li><a href="#"><img src="./img/langs/gb.svg"
-                                                alt="United Kingdom"><span>UK</span></a>
+                                    <!-- -------- -->
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/langs/gb.svg" alt="United Kingdom"
+                                                loading="lazy"><span>UK</span>
+                                        </a>
                                     </li>
-                                    <li><a href="#"><img src="./img/langs/usa.svg" alt="USA"><span>US</span></a></li>
-                                    <li><a href="#"><img src="./img/langs/rf.svg" alt="Russian"><span>RU</span></a></li>
-                                    <li><a href="#"><img src="./img/langs/fra.svg" alt="France"><span>FR</span></a></li>
-                                    <li><a href="#"><img src="./img/langs/esp.svg" alt="Spain"><span>ES</span></a></li>
+                                    <!-- -------- -->
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/langs/usa.svg" alt="USA" loading="lazy"><span>US</span>
+                                        </a>
+                                    </li>
+                                    <!-- -------- -->
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/langs/rf.svg" alt="Russian" loading="lazy"><span>RU</span>
+                                        </a>
+                                    </li>
+                                    <!-- -------- -->
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/langs/fra.svg" alt="France" loading="lazy"><span>FR</span>
+                                        </a>
+                                    </li>
+                                    <!-- -------- -->
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/langs/esp.svg" alt="Spain" loading="lazy"><span>ES</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -64,50 +119,66 @@
                 <nav class="header__navigation" aria-label="navegação no site">
                     <ul>
                         <li active>
-                            <a href="#"><span>Cassino</span></a>
+                            <a href="#">
+                                <img src="./img/menu_icons/casino.svg" alt="dice icon" class="mob_menu_icon"
+                                    loading="lazy">
+                                <span>Cassino</span>
+                            </a>
                         </li>
+                        <!-- -------- -->
                         <li>
                             <a href="#">
-                                <img src="./img/menu_icons/ball.svg" alt="ball icon" class="mob_menu_icon">
+                                <img src="./img/menu_icons/ball.svg" alt="ball icon" class="mob_menu_icon"
+                                    loading="lazy">
                                 <span>Esporte</span>
                             </a>
                         </li>
+                        <!-- -------- -->
                         <li>
                             <a href="#">
-                                <img src="./img/menu_icons/e-sports.svg" alt="e-sports icon" class="mob_menu_icon">
+                                <img src="./img/menu_icons/e-sports.svg" alt="e-sports icon" class="mob_menu_icon"
+                                    loading="lazy">
                                 <span>E-sports</span>
                             </a>
                         </li>
+                        <!-- -------- -->
                         <li data-live>
                             <a href="#">
                                 <img src="./img/menu_icons/live-dillers.svg" alt="live dillers icon"
-                                    class="mob_menu_icon">
+                                    class="mob_menu_icon" loading="lazy">
                                 <span>Cassino Live</span>
                             </a>
                             <span class="live_icon">LIVE</span>
                         </li>
+                        <!-- -------- -->
                         <li>
                             <a href="#">
-                                <img src="./img/menu_icons/tv-games.svg" alt="tv games icon" class="mob_menu_icon">
+                                <img src="./img/menu_icons/tv-games.svg" alt="tv games icon" class="mob_menu_icon"
+                                    loading="lazy">
                                 <span>Jogos de TV</span>
                             </a>
                         </li>
+                        <!-- -------- -->
                         <li>
                             <a href="#">
                                 <img src="./img/menu_icons/aviator-plane.svg" alt="aviator plane icon"
-                                    class="mob_menu_icon">
-                                <img src="./img/aviator.svg" alt="aviator logotype">
+                                    class="mob_menu_icon" loading="lazy">
+                                <img src="./img/aviator.svg" alt="aviator logotype" loading="lazy">
                             </a>
                         </li>
+                        <!-- -------- -->
                         <li data-new>
                             <a href="#">
-                                <img src="./img/menu_icons/v-sport.svg" alt="virtual sport icon" class="mob_menu_icon">
+                                <img src="./img/menu_icons/v-sport.svg" alt="virtual sport icon" class="mob_menu_icon"
+                                    loading="lazy">
                                 <span>Esportes Virtuais</span>
                             </a>
                         </li>
+                        <!-- -------- -->
                         <li>
                             <a href="#">
-                                <img src="./img/menu_icons/promo-red.svg" alt="present icon" class="mob_menu_icon">
+                                <img src="./img/menu_icons/promo-red.svg" alt="present icon" class="mob_menu_icon"
+                                    loading="lazy">
                                 <span>Promoções</span>
                             </a>
                         </li>
@@ -121,12 +192,12 @@
     <!-- MAIN -->
     <main id="main">
         <h1 class="sr_only">Сassino online Pin-up</h1>
-
+        <!-- -------- -->
         <button class="scroll_top_btn" aria-label="botão para cima">
-            <img src="./img/chevron_white.svg" alt="chevron" loading="lazy">
+            <img src="./img/chevron_white.svg" alt="chevron icon" loading="lazy">
             <span>Para cima</span>
         </button>
-
+        <!-- -------- -->
         <div class="container_main">
             <div class="content_main">
                 <div class="banner_row">
@@ -134,63 +205,72 @@
                         <a href="#" class="bonus_banner">
                             <div class="bonus_banner__title">Bônus de Boas-vindas</div>
                             <div class="bonus_banner__content">€ 500</div>
-                            <button class="bonus_banner__btn btn btn_red">Obtenha agora</button>
+                            <button class="bonus_banner__btn btn btn_red" aria-label="assistir botão de bônus">Obtenha
+                                agora</button>
                         </a>
-                        <button class="bonus_banner__close_btn"></button>
+                        <button class="bonus_banner__close_btn" aria-lable="botão fechar banner"></button>
                     </div>
-                    <!-- ---- -->
+                    <!-- -------- -->
                     <a href="#" class="banner_lg">
                         <picture>
                             <source media="(max-width: 420px)" srcset="./img/banner_main_sm.webp">
                             <source media="(max-width: 768px)" srcset="./img/banner_main_md.webp">
-                            <img src="./img/banner_main_lg.webp" alt="logotype">
+                            <img src="./img/banner_main_lg.webp" alt="logotype" loading="lazy">
                         </picture>
-
+                        <!-- -------- -->
                         <div class="banner_lg__content">
                             <div class="banner_lg__text">
                                 250 FS + 100%: <br>
                                 bônus de boas-vindas <br>
                                 Acenda a chama das vitórias!
                             </div>
-                            <button class="banner_lg__btn btn btn_red">Obter bônus</button>
+                            <button class="banner_lg__btn btn btn_red" aria-label="assistir botão de bônus">Obter
+                                bônus</button>
                         </div>
                     </a>
                 </div>
                 <div class="content_wrap">
+
                     <!-- SIDEBAR -->
                     <aside id="sidebar">
-                        <!-- CATEGORIES -->
                         <nav class="categories">
                             <ul>
                                 <li>
                                     <a href="#" class="category btn btn_red">
-                                        <img src="./img/menu_icons/pincoin.svg" alt="pincoin icon"
-                                            class="mob_menu_icon">
+                                        <img src="./img/menu_icons/pincoin.svg" alt="pincoin icon" class="mob_menu_icon"
+                                            loading="lazy">
                                         <span>Pincoins</span>
                                     </a>
                                 </li>
+                                <!-- -------- -->
                                 <li data-cup>
                                     <a href="#" class="category btn btn_red">
                                         <img src="./img/menu_icons/achievements.svg" alt="achievements icon"
-                                            class="mob_menu_icon">
+                                            class="mob_menu_icon" loading="lazy">
                                         <span>Torneios</span>
                                     </a>
                                 </li>
+                                <!-- -------- -->
                                 <li>
                                     <a href="#" class="category btn btn_red">
-                                        <img src="./img/menu_icons/ticket.svg" alt="ticket icon" class="mob_menu_icon">
+                                        <img src="./img/menu_icons/ticket.svg" alt="ticket icon" class="mob_menu_icon"
+                                            loading="lazy">
                                         <span>Loteria</span>
                                     </a>
                                 </li>
+                                <!-- -------- -->
                                 <li>
                                     <a href="#" class="category btn btn_red">
-                                        <img src="./img/menu_icons/news.svg" alt="news icon" class="mob_menu_icon">
+                                        <img src="./img/menu_icons/news.svg" alt="news icon" class="mob_menu_icon"
+                                            loading="lazy">
                                         <span>Novidades</span>
                                     </a>
                                 </li>
+                                <!-- -------- -->
                                 <li>
                                     <a href="#" class="category btn btn_red">
-                                        <img src="./img/menu_icons/dopinfo.svg" alt="info icon" class="mob_menu_icon">
+                                        <img src="./img/menu_icons/dopinfo.svg" alt="info icon" class="mob_menu_icon"
+                                            loading="lazy">
                                         <span>Informação</span>
                                     </a>
                                 </li>
@@ -198,21 +278,23 @@
                         </nav>
 
                         <div class="providers_wrap">
+                            <!-- SEARCH -->
                             <form class="search">
                                 <input type="search" name="search" class="search_input" placeholder="Procurar jogos"
                                     aria-label="caixa de pesquisa">
-                                <button type="submit" class="search_btn"></button>
+                                <button type="submit" class="search_btn" aria-label="botão de pesquisa"></button>
                             </form>
 
                             <!-- PROVIDERS -->
                             <nav class="providers">
-                                <div class="providers__compact">
+                                <button class="providers__compact" aria-label="botão mostrar provedores">
                                     <div class="providers__burger">
                                         <span></span>
                                     </div>
                                     <div class="providers__compact_title">Providers</div>
-                                </div>
-                                <ul active>
+                                </button>
+                                <!-- -------- -->
+                                <ul>
                                     <li><a href="#" class="btn btn_gray">Drops & Wins</a></li>
                                     <li><a href="#" class="btn btn_gray">1spin4win</a></li>
                                     <li><a href="#" class="btn btn_gray">1x2gaming</a></li>
@@ -280,165 +362,216 @@
 
                     <!-- CONTENT -->
                     <div id="content">
+
                         <!-- GAMES -->
                         <section class="games rolled">
                             <h2 class="sr_only">Lista de jogos</h2>
-
+                            <!-- -------- -->
                             <div class="dashbord">
                                 <a href="#" class="thumb_block game" data-cup>
                                     <span class="scale_box">
-                                        <img src="./img/games/game_1.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_1.webp" loading="lazy" alt="game preview"
+                                            title="Hot Fruits 100">
                                     </span>
                                     <span class="thumb_block__title">Hot Fruits 100</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_2.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_2.webp" loading="lazy" alt="game preview"
+                                            title="Pin-Up Athena's Glory">
                                     </span>
                                     <span class="thumb_block__title">Pin-Up Athena's Glory</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_3.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_3.webp" loading="lazy" alt="game preview"
+                                            title="Allways Hot Fruits">
                                     </span>
                                     <span class="thumb_block__title">Allways Hot Fruits</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_4.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_4.webp" loading="lazy" alt="game preview"
+                                            title="Sunny Coin 2">
                                     </span><span class="thumb_block__title">Sunny Coin 2</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game" data-new>
                                     <span class="scale_box">
-                                        <img src="./img/games/game_5.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_5.webp" loading="lazy" alt="game preview"
+                                            title="Story Of Odin">
                                     </span>
                                     <span class="thumb_block__title">Story Of Odin</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_6.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_6.webp" loading="lazy" alt="game preview"
+                                            title="Wild Crowns">
                                     </span>
                                     <span class="thumb_block__title">Wild Crowns</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_7.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_7.webp" loading="lazy" alt="game preview"
+                                            title="Green Chilli">
                                     </span>
                                     <span class="thumb_block__title">Green Chilli</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game" data-cup>
                                     <span class="scale_box">
-                                        <img src="./img/games/game_8.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_8.webp" loading="lazy" alt="game preview"
+                                            title="Burning Fortunator">
                                     </span>
                                     <span class="thumb_block__title">Burning Fortunator</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game" data-new>
                                     <span class="scale_box">
-                                        <img src="./img/games/game_9.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_9.webp" loading="lazy" alt="game preview"
+                                            title="Gold Gold Gold">
                                     </span>
                                     <span class="thumb_block__title">Gold Gold Gold</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_10.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_10.webp" loading="lazy" alt="game preview"
+                                            title="Sunlight Princess">
                                     </span>
                                     <span class="thumb_block__title">Sunlight Princess</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_11.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_11.webp" loading="lazy" alt="game preview"
+                                            title="9 Coins">
                                     </span>
                                     <span class="thumb_block__title">9 Coins</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game" data-new>
                                     <span class="scale_box">
-                                        <img src="./img/games/game_12.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_12.webp" loading="lazy" alt="game preview"
+                                            title="Aviatrix">
                                     </span>
                                     <span class="thumb_block__title">Aviatrix</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_13.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_13.webp" loading="lazy" alt="game preview"
+                                            title="Maya Sun">
                                     </span>
                                     <span class="thumb_block__title">Maya Sun</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_14.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_14.webp" loading="lazy" alt="game preview"
+                                            title="243 Crystal Fruits">
                                     </span>
                                     <span class="thumb_block__title">243 Crystal Fruits</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_15.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_15.webp" loading="lazy" alt="game preview"
+                                            title="7 & Hot Fruits">
                                     </span>
                                     <span class="thumb_block__title">7 & Hot Fruits</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_16.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_16.webp" loading="lazy" alt="game preview"
+                                            title="Book Of Rampage 2">
                                     </span>
                                     <span class="thumb_block__title">Book Of Rampage 2</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_17.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_17.webp" loading="lazy" alt="game preview"
+                                            title="Pin-Up Fortune Double">
                                     </span>
                                     <span class="thumb_block__title">Pin-Up Fortune Double
                                     </span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_18.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_18.webp" loading="lazy" alt="game preview"
+                                            title="Big Wild Buffalo">
                                     </span>
                                     <span class="thumb_block__title">Big Wild Buffalo</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game" data-new data-cup>
                                     <span class="scale_box">
-                                        <img src="./img/games/game_19.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_19.webp" loading="lazy" alt="game preview"
+                                            title="Story of Medusa II">
                                     </span>
                                     <span class="thumb_block__title">Story of Medusa II</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_20.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_20.webp" loading="lazy" alt="game preview"
+                                            title="Luxor Gold">
                                     </span>
                                     <span class="thumb_block__title">Luxor Gold</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_21.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_21.webp" loading="lazy" alt="game preview"
+                                            title="3X3 Egypt">
                                     </span>
                                     <span class="thumb_block__title">3X3 Egypt</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_22.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_22.webp" loading="lazy" alt="game preview"
+                                            title="Crazy Monkey">
                                     </span>
                                     <span class="thumb_block__title">Crazy Monkey</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_23.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_23.webp" loading="lazy" alt="game preview"
+                                            title="Aztec Magic Bonanza">
                                     </span>
                                     <span class="thumb_block__title">Aztec Magic Bonanza</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_24.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_24.webp" loading="lazy" alt="game preview"
+                                            title="Wilds Of Fortune">
                                     </span>
                                     <span class="thumb_block__title">Wilds Of Fortune</span>
                                 </a>
+                                <!-- -------- -->
                                 <a href="#" class="thumb_block game">
                                     <span class="scale_box">
-                                        <img src="./img/games/game_25.webp" loading="lazy" alt="game preview">
+                                        <img src="./img/games/game_25.webp" loading="lazy" alt="game preview"
+                                            title="Burning Classics Go Wild">
                                     </span>
                                     <span class="thumb_block__title">Burning Classics Go Wild</span>
                                 </a>
                             </div>
                             <!-- ---- -->
-                            <button class="btn btn_red rolled_btn" aria-label="botão de expandir seção">Mostrar todos os
-                                jogos</button>
+                            <button class="btn btn_red rolled_btn" aria-label="botão de expandir seção">
+                                Mostrar todos os jogos
+                            </button>
                             <!-- ---- -->
                             <button class="rolled_back_btn" aria-label="botão de seção de recolhimento">
                                 <span>Colapso</span>
@@ -499,7 +632,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-
+                                <!-- ---- -->
                                 <div class="rating">
                                     <div class="rating__summary">
                                         <div class="rating__row">
@@ -676,9 +809,8 @@
                         <!-- FAQ -->
                         <section class="faq_section">
                             <h2 class="title_section">FAQ</h2>
-
+                            <!-- -------- -->
                             <div class="faq_section__items">
-                                <!-- -------- -->
                                 <div class="faq_section__item" aria-label="caixa suspensa com informações">
                                     <div class="faq_section__item_title">
                                         <h4>Posso jogar no cassino de graça?</h4>
@@ -876,7 +1008,7 @@
                     <nav class="footer_nav">
                         <ul class="footer_nav__col">
                             <div class="footer_nav__col_title">Termos de uso:</div>
-
+                            <!-- -------- -->
                             <li><a href="#">Termos e Condições</a></li>
                             <li><a href="#">Regras de apostas</a></li>
                             <li><a href="#">Tipos de apostas</a></li>
@@ -887,7 +1019,7 @@
                         </ul>
                         <ul class="footer_nav__col">
                             <div class="footer_nav__col_title">Informação:</div>
-
+                            <!-- -------- -->
                             <li><a href="#">Promoções</a></li>
                             <li><a href="#">Sobre nós</a></li>
                             <li><a href="#">Perguntas Frequentes</a></li>
@@ -898,7 +1030,7 @@
                         </ul>
                         <ul class="footer_nav__col">
                             <div class="footer_nav__col_title">Apostas:</div>
-
+                            <!-- -------- -->
                             <li><a href="#">Apostas ao vivo</a></li>
                             <li><a href="#">Apostas pré-jogo</a></li>
                             <li><a href="#">Múltiplos ao vivo</a></li>
@@ -907,7 +1039,7 @@
                         </ul>
                         <ul class="footer_nav__col">
                             <div class="footer_nav__col_title">Cassino:</div>
-
+                            <!-- -------- -->
                             <li><a href="#">Novo</a></li>
                             <li><a href="#">Slots</a></li>
                             <li><a href="#">Roletas</a></li>
@@ -917,9 +1049,10 @@
                         </ul>
                         <ul class="footer_nav__col">
                             <div class="footer_nav__col_title">Para parceiros:</div>
-
+                            <!-- -------- -->
                             <li><a href="#">Programa de Afiliados</a></li>
-                            <li><a href="#">
+                            <li>
+                                <a href="#">
                                     <svg class="svg-partners" id="Слой_1" data-name="Слой 1"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.453 97.453">
                                         <g>
@@ -973,7 +1106,7 @@
                                 </p>
                             </div>
                         </div>
-
+                        <!-- -------- -->
                         <div class="footer_txt__block">
                             <div class="footer_txt__block_title">Pin-up cassino online – vantagem em cada detalhe!</div>
                             <p class="footer_txt__block_content">
@@ -997,7 +1130,7 @@
                                 especiais de feriado. Jogue, ganhe e divirta-se!
                             </p>
                         </div>
-
+                        <!-- -------- -->
                         <div class="footer_column">
                             <div class="footer_txt__block_title">Benefícios:</div>
 
@@ -1047,48 +1180,149 @@
                     </nav>
                     <!-- ----- -->
                     <div class="footer_brands">
-                        <a href="#"><img src="./img/footer/brands/brand_2.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_3.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_4.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_5.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_1.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_6.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_7.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_8.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_9.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_10.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_11.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_12.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_13.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_14.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_15.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_16.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_17.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_18.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_19.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_20.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_21.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_22.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_23.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_24.svg" alt="brand logo" loading="lazy"></a>
-                        <a href="#"><img src="./img/footer/brands/brand_25.svg" alt="brand logo" loading="lazy"></a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_1.svg" title="netent" alt="netent logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_2.svg" title="playngo" alt="playngo logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_3.svg" title="yggdrasil" alt="yggdrasil logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_4.svg" title="amatic" alt="amatic logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_5.svg" title="quickspin" alt="quickspin logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_6.svg" title="habanero" alt="habanero logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_7.svg" title="microgaming" alt="microgaming logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_8.svg" title="red tiger" alt="red tiger logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_9.svg" title="evolution gaming"
+                                alt="evolution gaming logotype" loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_10.svg" title="ezugi" alt="ezugi logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_11.svg" title="boongo" alt="boongo logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_12.svg" title="playson" alt="playson logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_13.svg" title="betsoft" alt="betsoft logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_14.svg" title="pragmatic play"
+                                alt="pragmatic play logotype" loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_15.svg" title="bigtime gaming"
+                                alt="bigtime gaming logotype" loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_16.svg" title="softbet" alt="softbet logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_17.svg" title="belatra games"
+                                alt="belatra games logotype" loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_18.svg" title="tom horn" alt="tom horn logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_19.svg" title="booming games"
+                                alt="booming games logotype" loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_20.svg" title="1x2 gaming" alt="1x2 gaming logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_21.svg" title="irondog" alt="irondog logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_22.svg" title="egt" alt="egt logotype" loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_23.svg" title="apollo games" alt="apollo games logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_24.svg" title="gameart" alt="gameart logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_25.svg" title="mr slotty" alt="mr slotty logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_26.svg" title="edict" alt="edict logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_27.svg" title="pariplay" alt="pariplay logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_28.svg" title="rabcat" alt="rabcat logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_29.svg" title="platipus" alt="platipus logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_30.svg" title="igrosoft" alt="igrosoft logotype"
+                                loading="lazy">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/brands/brand_31.svg" title="thunderkick" alt="thunderkick logotype"
+                                loading="lazy">
+                        </a>
                     </div>
-                    <!-- ----- -->
+                    <!-- -------- -->
                     <div class="footer_icons">
-                        <a href="#"><img src="./img/footer/license.webp" alt="license icon" loading="lazy"
-                                class="licenze"></a>
+                        <a href="#">
+                            <img src="./img/footer/license.webp" alt="license icon" loading="lazy" class="licenze">
+                        </a>
                         <img src="./img/footer/eighteen.svg" alt="eighteen icon" class="eighteen" loading="lazy">
-                        <a href="#"><img src="./img/footer/poker-bet.svg" alt="pocker bet icon" class="pockerbet"
-                                loading="lazy"></a>
+                        <a href="#">
+                            <img src="./img/footer/poker-bet.svg" alt="pocker bet icon" class="pockerbet"
+                                loading="lazy">
+                        </a>
                         <img src="./img/footer/mastercard_securty_code.svg" alt="mastercard secure code icon"
                             loading="lazy">
                         <img src="./img/footer/verified_by_visa.svg" alt="verified by visa icon" loading="lazy">
-                        <img src="./img/footer/astropay-logo.svg" alt="astro pay" class="astropay" loading="lazy">
+                        <img src="./img/footer/astropay-logo.svg" alt="astro pay logo" class="astropay" loading="lazy">
                         <img src="./img/footer/Neteller.svg" alt="neteller logotype" loading="lazy">
                         <img src="./img/footer/Skrill.svg" alt="scrill logotype" loading="lazy">
                         <img src="./img/footer/jeton-voucher.svg" alt="jeton voucher icon" loading="lazy">
                     </div>
-                    <!-- ----- -->
+                    <!-- -------- -->
                     <div class="footer_desc">
                         The web-site is operated by B.W.I. BLACK-WOOD LIMITED, a company registered and established
                         under the laws of Cyprus, with registered address Ifigeneias 14,3036 Limassol, Cyprus, and
@@ -1098,9 +1332,9 @@
                         (Curacao License #8048/JAZ2017-0003) and regulated by Antillephone N.V. Carletta N.V.s
                         registration number is 142346 and its Business address: Dr. Henri Fergusonweg 1, Curaçao.
                     </div>
-                    <!-- ----- -->
+                    <!-- -------- -->
                     <div class="footer_app">
-                        <a href="#"><img src="./img/footer/Android.svg" alt="android logo"><a>
+                        <a href="#"><img src="./img/footer/Android.svg" alt="android logotype" loading="lazy"><a>
                     </div>
                 </footer>
                 <!-- /#footer -->

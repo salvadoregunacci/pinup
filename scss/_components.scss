@@ -96,7 +96,7 @@
 .select_lang[active] {
   position: relative;
   z-index: 21;
-  
+
   .select_lang__content {
     display: flex;
   }
@@ -237,6 +237,7 @@
         background: #000;
         opacity: 0.1;
         z-index: 2;
+        pointer-events: none;
       }
     }
 

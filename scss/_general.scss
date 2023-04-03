@@ -185,6 +185,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   column-gap: 15px;
+  justify-content: center;
   white-space: nowrap;
 
   &::after {
